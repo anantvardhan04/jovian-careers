@@ -1,0 +1,19 @@
+{% for job in jobs %}
+<div class="row" style="margin-top:14px">
+  <div class="col-8">
+    <h4 style="color: rgb(100,100,100)"> {{ job['title'] }} </h4>
+    <div>
+      <b> {{ job['location'] }} </b>
+    </div>
+    <div style="margin-bottom:8px">
+      {% if 'salary' in job %}
+      <b>Salary:</b> {{ job['salary'] }}
+      {% endif %}
+    </div>
+  </div>
+  <div class="col-4"  style="text-align: right">
+    <button class="btn btn-outline-primary">Apply</button>
+  </div>
+  <hr></hr>
+</div>
+{% endfor %}4
