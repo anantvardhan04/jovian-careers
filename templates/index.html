@@ -1,8 +1,7 @@
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Jovian Careers</title>
+    {% include 'bootstrap.html' %}
       <style>
        h1 {
          text-align: center;
@@ -18,29 +17,23 @@
         #about {
           font-family: "Equip";
         }
-       img {
-         height: 200px;
-         width: 100%;
-         object-fit: cover;
-       }
-        
        .container {
-         max-width: 800px;
          margin: 0 auto;
        }
+
+
       </style>
   </head>
   <body>
+      {% include 'header.html' %}
+      {% include 'banner.html' %}
     <div class="container">
       <h1>Jovian Careers</h1>
-      <img src="https://c50b52bf-960b-48fe-b64f-42695f8e8632-00-3sniz9sxcfra9.picard.replit.dev/static/career.jpg" style="margin-bottom: 20px;">
       <h2>About Jovian</h2>
       <p id="About">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor dignissim convallis aenean et tortor at risus. Volutpat lacus laoreet non curabitur gravida arcu. At tempor commodo ullamcorper a lacus vestibulum sed arcu non. Mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non. Nullam ac tortor vitae purus faucibus ornare suspendisse sed. Varius duis at consectetur lorem donec. Lorem donec massa sapien faucibus et. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Purus faucibus ornare suspendisse sed nisi lacus. Odio euismod lacinia at quis risus sed vulputate. Non odio euismod lacinia at quis risus. Id faucibus nisl tincidunt eget. Eu sem integer vitae justo eget. Vulputate ut pharetra sit amet aliquam id diam. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui.</p>
       <h3 style="text-align: center; margin-bottom:20px">Open Jobs</h3>
       {% include 'jobitems.html' %}
-      <div style="text-align: center;margin-bottom:10px">
-      <button class="btn btn-info">Contact Us</button>
-      </div>
     </div>
+      {% include 'footer.html' %}
   </body>
 </html>

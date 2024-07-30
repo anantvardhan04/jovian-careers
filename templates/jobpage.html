@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>{{ job_details['title'] }}</title>
+    {% include 'bootstrap.html' %}
+  </head>
+  <body>
+    {% include 'header.html' %}
+    {% include 'banner.html' %}
+    <div class=container>
+      <h2> {{ job_details['title']}} </h2>
+      <hr>
+      <b>Location:</b> {{ job_details['location'] }}<br><br>
+      <b>Salary:</b> {{ job_details['currency']}}{{ job_details['salary'] }} <br><br>
+      <b>Responsibilites:</b><br><br>
+      {{ job_details['responsibilities'] }}<br><br>
+      <b>Requirements:</b><br><br>
+          <ol>
+            {% for requirement in job_details['requirements'].split('\n') %}
+            <li>{{ requirement }}</li>
+            {% endfor %}
+          </ol>
+      <hr>
+      {% include 'application_form.html' %}
+    </div>
+    {% include 'footer.html' %}
+  </body>
+</html>
+

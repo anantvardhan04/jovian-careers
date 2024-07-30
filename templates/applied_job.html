@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Applied - {{ job_details['title'] }}</title>
+    {% include 'bootstrap.html' %}
+  </head>
+  <body>
+    {% include 'header.html' %}
+    {% include 'banner.html' %}
+    <div class=container>
+      Your application has been submitted successfully for the <b>{{ job_details['title']}}</b> role. Here are your application details:
+      <hr>
+      <b>Name:</b><br> {{ applied_job_details['full_name'] }}<br><br>
+      <b>Email:</b><br> {{ applied_job_details['email'] }} <br><br>
+      <b>Linkedin URL:</b><br> {{ applied_job_details['linkedin_url'] }} <br><br>
+      <b>Education Details:</b><br> {{ applied_job_details['education'] }} <br><br>
+      <b>Work Experience:</b><br> {{ applied_job_details['work_experience'] }} <br><br>
+      <b>Resume URL:</b><br> {{ applied_job_details['resume_url'] }} <br><br>
+    </div>
+    {% include 'footer.html' %}
+  </body>
+</html>
+
