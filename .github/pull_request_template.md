@@ -1,1 +1,1 @@
-- [ ] You need to check this before merging.
+- [ ] Develop branch version for PR template. You need to check this before merging.
